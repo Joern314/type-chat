@@ -1,0 +1,19 @@
+{
+  "name": "type-chat",
+  "version": "0.0.0",
+  "description": "A type-safe chat.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joern314/type-chat.git"
+  },
+  "author": "Joern Stoehler",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Joern314/type-chat/issues"
+  },
+  "homepage": "https://github.com/Joern314/type-chat#readme"
+}

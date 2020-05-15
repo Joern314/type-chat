@@ -2,10 +2,12 @@
   "name": "type-chat",
   "version": "0.0.0",
   "description": "A type-safe chat.",
-  "main": "dist/index.js",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "build": "tsc"
+    "start": "tsc && node dist/app.js",
+    "build": "tsc",
+    "clean": "rm -rf dist/*",
+    "cleannpm": "rm -rf dist/* node_modules"
   },
   "repository": {
     "type": "git",

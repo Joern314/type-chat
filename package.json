@@ -2,9 +2,10 @@
   "name": "type-chat",
   "version": "0.0.0",
   "description": "A type-safe chat.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node dist/index.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Joern314/type-chat/issues"
   },
-  "homepage": "https://github.com/Joern314/type-chat#readme"
+  "homepage": "https://github.com/Joern314/type-chat#readme",
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.2"
+  }
 }

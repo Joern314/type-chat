@@ -30,7 +30,6 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "fp-ts": "^2.6.1",
     "jsonschema": "^1.2.6"
   }
 }

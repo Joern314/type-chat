@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "description": "A type-safe chat.",
   "main": "dist/app.js",
+  "type": "module",
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "build": "webpack --config ./webpack.config.js",
+    "build": "tsc",
     "schema": "typescript-json-schema tsconfig.json -o src/models/schema.json --required --noExtraProps --strictNullChecks '*'",
     "clean": "rm -rf dist/*",
     "cleannpm": "rm -rf dist/* node_modules"

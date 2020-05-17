@@ -1,3 +1,2 @@
-import * as network from "./models/serialization"
+import * as chat from "./chat"
 
-network.logIncoming('{"name":"Hello" , "message":"world!" , "id": 42 }');

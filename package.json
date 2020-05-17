@@ -5,7 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "build": "tsc",
+    "build": "webpack --config ./webpack.config.js",
+    "schema": "typescript-json-schema tsconfig.json -o src/models/schema.json --required --noExtraProps --strictNullChecks '*'",
     "clean": "rm -rf dist/*",
     "cleannpm": "rm -rf dist/* node_modules"
   },
@@ -21,7 +22,15 @@
   "homepage": "https://github.com/Joern314/type-chat#readme",
   "devDependencies": {
     "@types/node": "^14.0.1",
+    "ts-loader": "^7.0.4",
     "tslint": "^6.1.2",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.2",
+    "typescript-json-schema": "^0.42.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "fp-ts": "^2.6.1",
+    "jsonschema": "^1.2.6"
   }
 }

@@ -1,10 +1,23 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "target": "es6",
     "outDir": "dist",
     "rootDir": "src",
+    // module
+    "target": "es5",
+    "module": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    // lib
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    // lint
     "strict": true,
+    "noImplicitReturns": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
   }
 }
